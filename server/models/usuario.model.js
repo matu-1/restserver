@@ -21,7 +21,7 @@ let usuarioShema = new Schema({
     required: [true, 'La contraseña es necesaria'],
     set: hashpassword
   },
-  imag: {
+  img: {
     type: String,
     required: false,
   },
