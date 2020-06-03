@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(require('./controllers/usuario.controller'));
+app.use(require('./controllers/login.controller'))
 
 mongoose.connect(process.env.URL_DB, {
   useNewUrlParser: true,
