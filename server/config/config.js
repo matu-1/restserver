@@ -8,5 +8,5 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';   //NODE_ENV lo establece 
 if(process.env.NODE_ENV == 'dev') {
   process.env.URL_DB = 'mongodb://localhost:27017/cafedb'
 }else{
-  process.env.URL_DB = 'mongodb+srv://matu:7991@cluster0-p5sby.mongodb.net/cafedb'
+  process.env.URL_DB = process.env.URL_REMOTE_DB;
 }
