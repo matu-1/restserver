@@ -14,6 +14,8 @@ app.use(express.static(path.resolve(__dirname, '../public')))
 //rutas
 app.use(require('./controllers/usuario.controller'));
 app.use(require('./controllers/login.controller'))
+app.use(require('./controllers/categoria.controller'))
+app.use(require('./routes/route'));
 
 mongoose.connect(process.env.URL_DB, {
   useNewUrlParser: true,

@@ -48,4 +48,4 @@ usuarioShema.methods.toJSON = function(){
 }
 usuarioShema.plugin(uniqueValidator, { message: 'El {PATH} debe de ser unico'});
 
-module.exports = mongoose.model('usuario', usuarioShema);
+module.exports = mongoose.model('Usuario', usuarioShema);

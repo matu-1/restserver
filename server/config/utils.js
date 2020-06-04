@@ -13,6 +13,12 @@ let obj = {
   edad: 12,
   celuar: 897897,
 }
-console.log(pick(obj, ['edad']));
+console.log(pick(obj, ['apellido', 'edad']));
 
 module.exports = { pick };
+
+
+var exp = new RegExp('hola', 'i');
+// console.log(exp);
+var reg = /ti/;
+// console.log(reg.exec('matias'));
