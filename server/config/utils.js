@@ -22,3 +22,5 @@ var exp = new RegExp('hola', 'i');
 // console.log(exp);
 var reg = /ti/;
 // console.log(reg.exec('matias'));
+
+console.log('sabe' + (undefined || '') );
